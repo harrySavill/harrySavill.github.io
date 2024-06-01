@@ -1,0 +1,167 @@
+:root {
+  --yellow-green: #BAFF39;
+  --dim-gray: #6E6E6E;
+  --blue: #45567d; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--yellow-green);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 1; 
+}
+
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-block: 0;
+}
+
+nav > ul > li {
+  color: black;
+  margin: 0 0.2rem;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+nav > ul > li > a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Helvetica;
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.4rem;
+  height: 100%; 
+}
+
+nav > ul > li:hover {
+  background-color: #ADD8E6;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
+.welcome-section {
+  height: 100vh;
+  background-color: var(--dim-gray);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: white;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 6rem;
+}
+
+.welcome-section p{
+  color: var(--yellow-green);
+  font-family: Helvetica;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.projects{
+  height: 100vh;
+  background-color: var(--blue);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+h2{
+  padding: 1em;
+  color: white;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.projects-header{
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid white;
+}
+
+.project-tile{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 85%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-tile img{
+	width: 300px;
+	height: 225px;
+}
+
+
+
+.profile-link{
+  color: white;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 1.2rem;
+  background-color: var(--dim-gray);
+  padding: 1em;
+
+}
+
+.profile-link:hover{
+  background-color: var(--yellow-green);
+}
+
+.profile-link:hover > i {
+  transform: translateX(2px);
+}
+
+.profile-link > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+
+.contact {
+  height: 100vh;
+  background-color: var(--dim-gray);
+  width: 100%;
+}
