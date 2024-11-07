@@ -299,4 +299,27 @@ html {
         width: 100%;
         text-align: center;
     }
+    nav .links-div {
+        display: none;
+    }
+
+    .nav-left {
+        margin: 0 auto;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-div {
+        align-items: center;
+        text-align: center;
+    }
 }
