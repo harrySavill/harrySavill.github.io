@@ -299,12 +299,19 @@ html {
         width: 100%;
         text-align: center;
     }
+
     nav .links-div {
         display: none;
     }
 
     .nav-left {
         margin: 0 auto;
+    }
+    nav h2{
+        margin: 0;
+    }
+    nav{
+        padding-left: 0;
     }
 
     .project {
