@@ -1,142 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Harry Savill</title>
-</head>
-<body>
-    <nav>
-        <div class="nav-left">
-            <h2>Harry Savill</h2>
-        </div>
-        <div class="links-div">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Savill - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://github.com/harrySavill" target="_blank" class="nav-icon" aria-label="GitHub Profile">
+          <img src="Photos/github-icon.png" alt="GitHub" class="icon">
+        </a>
+        <a href="mailto:harrysavill6@gmail.com" class="nav-icon" aria-label="Email">
+          <img src="Photos/email-icon.png" alt="Email" class="icon">
+        </a>
+        <a href="https://www.linkedin.com/in/harrysavill" target="_blank" class="nav-icon" aria-label="LinkedIn Profile">
+          <img src="Photos/linkedin-icon.png" alt="LinkedIn" class="icon">
+        </a>
+      </div>
     </nav>
-    <main>
-        <section id="home" class="home">
-            <div class="home-center">
-                <h1>Hi, I'm Harry Savill</h1>
-                <p>Web developer focused on building user-friendly websites and turning ideas into clean, responsive code.</p>
-                <button class="main-projects-btn" onclick="window.location.href='#projects'">My Projects</button>
+    <section class="landing" id="home">
+      <h1 id="typed-name"></h1>
+      <p>A Computer Science graduate seeking an opportunity to start a successful development career.</p>
+      <button class="content-button" onclick="window.location.href='#projects'">
+        Explore My Work
+      </button>
+    </section>
+    <section class="about" id="about">
+      <div class="about-content">
+        <div class="about-text">
+          <h3>About Me</h3>
+          <p>I'm a Computer Science graduate with first-class honours, especially interested in web development. I enjoy working on projects that focus on usability and functionality, and I aim to build responsive, clean, and efficient code that solves real-world problems. I'm excited to start my career and build on the skills I’ve developed so far, and I’m keen to keep learning and improving through hands-on experience in the industry.</p>
+        </div>
+        <div class="my-skills">
+          <h3>My Skills</h3>
+          <div class="skills-grid">
+            <div class="skill">
+              <img src="Photos/html-icon.png" alt="HTML" class="skill-icon">
+              <p>HTML</p>
             </div>
-            <div class="contact-icons">
-                <a href="https://github.com/harrySavill" target="_blank">
-                    <img src="Photos/github-icon.png" alt="GitHub">
-                </a>
-                <a href="https://www.linkedin.com/in/harrysavill" target="_blank">
-                    <img src="Photos/linkedin-icon.png" alt="LinkedIn">
-                </a>
-                <a href="mailto:harrysavill6@gmail.com">
-                    <img src="Photos/email-icon.png" alt="Email">
-                </a>
+            <div class="skill">
+              <img src="Photos/css-icon.png" alt="CSS" class="skill-icon">
+              <p>CSS</p>
             </div>
-        </section>
-        
-        <section id="about" class="about">
-            <div class="about-center">
-                <h2 class="about-heading">About Me</h2>
-                <div class="separator"></div>
-                <div class="about-content">
-                    <div class="my-info">
-                        <h3>A Bit About Me</h3>
-                        <p>I'm a third year computer science student graduating in 2025 and currently on track to achieve first class honours.</p>
-                        <br>
-                        <p>I’m especially interested in web development and I enjoy working on projects that improve usability and functionality. I build responsive projects with clean, efficient code that solve real world problems.</p>
-                        <br>
-                        <p>I'm looking forward to starting my career and to build on the skills I've developed. I’m eager to keep learning and improving through hands-on experience in the industry.</p>
-                    </div>
-                    <div class="my-skills">
-                        <h3>My Skills</h3>
-                        <div class="skills-grid">
-                            <div class="skill">
-                                <img src="Photos/html-icon.png" alt="HTML">
-                                <p>HTML</p>
-                            </div>
-                            <div class="skill">
-                                <img src="Photos/css-icon.png" alt="CSS">
-                                <p>CSS</p>
-                            </div>
-                            <div class="skill">
-                                <img src="Photos/javascript-icon.png" alt="JavaScript">
-                                <p>JavaScript</p>
-                            </div>
-                            <div class="skill">
-                                <img src="Photos/php-icon.png" alt="PHP">
-                                <p>PHP</p>
-                            </div>
-                            <div class="skill">
-                                <img src="Photos/mariadb-icon.png" alt="MariaDB">
-                                <p>MariaDB</p>
-                            </div>
-                            <div class="skill">
-                                <img src="Photos/react-icon.png" alt="React">
-                                <p>React</p>
-                            </div>
-                            <div class="skill">
-                                <img src="Photos/github-icon.png" alt="GitHub">
-                                <p>GitHub</p>
-                            </div>
-                            <div class="skill">
-                                <img src="Photos/java-icon.png" alt="Java">
-                                <p>Java</p>
-                            </div>
-                            <div class="skill">
-                                <img src="Photos/python-icon.png" alt="Python">
-                                <p>Python</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="skill">
+              <img src="Photos/javascript-icon.png" alt="JavaScript" class="skill-icon">
+              <p>JavaScript</p>
             </div>
-        </section>
-        
-        <section id="projects" class="projects">
-            <div class="project-center">
-                <h2 class="project-heading">My Projects</h2>
-                <div class="separator"></div>
-                <div class="projects-container">
-                    <div class="project">
-                        <img src="Photos\tasktracker.png" alt="photo displaying the home page of my TaskTracker app" class="project-img">
-                        <div class="project-div">
-                            <div class="description">
-                                <h4 class="project-heading">TaskTracker</h4>
-                                <p>A task management web app built with HTML, CSS, PHP and MariaDB. It allows users to create, update, delete, and view tasks, with options to mark tasks as completed or pending. Includes a simple login system for user authentication and the user profile can also be updated inside the app.</p>
-                            </div>
-                            <h4 class="technologies-heading">Built With</h4>
-                            <div class="tools">
-                                <img src="Photos\html-icon.png" alt="html-icon" class="tool-img">
-                                <img src="Photos\css-icon.png" alt="css-icon" class="tool-img">
-                                <img src="Photos\php-icon.png" alt="php-icon" class="tool-img">
-                                <img src="Photos\mariadb-icon.png" alt="mariadb-icon" class="tool-img">
-                            </div>
-                            <a href="https://github.com/harrySavill/TaskTracker" class="view-project-source">View Source Code</a>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="Photos\converter.png" alt="photo displaying the home page of my TaskTracker app" class="project-img">
-                        <div class="project-div">
-                            <div class="description">
-                                <h4 class="project-heading">Unit and Currency Converter</h4>
-                                <p>A unit and currency converter built using HTML, CSS and JavaScript, built with ease of use in mind. It provides accurate, real-time currency conversions using API calls as well as a wide range of unit conversions, for length, weight, temperature, area, volume and time.</p>
-                            </div>
-                            <h4 class="technologies-heading">Built With</h4>
-                            <div class="tools">
-                                <img src="Photos\html-icon.png" alt="html-icon" class="tool-img">
-                                <img src="Photos\css-icon.png" alt="css-icon" class="tool-img">
-                                <img src="Photos\javascript-icon.png" alt="javascript-icon" class="tool-img">
-                            </div>
-                            <a href="https://github.com/harrySavill/Converter" class="view-project-source">View Source Code</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="skill">
+              <img src="Photos/php-icon.png" alt="PHP" class="skill-icon">
+              <p>PHP</p>
             </div>
-        </section>
-    </main>
-</body>
+            <div class="skill">
+              <img src="Photos/mysql-icon.png" alt="MySQL" class="skill-icon">
+              <p>MySQL</p>
+            </div>
+            <div class="skill">
+              <img src="Photos/react-icon.png" alt="React" class="skill-icon">
+              <p>React</p>
+            </div>
+            <div class="skill">
+              <img src="Photos/github-icon-skills.png" alt="GitHub" class="skill-icon">
+              <p>GitHub</p>
+            </div>
+            <div class="skill">
+              <img src="Photos/java-icon.png" alt="Java" class="skill-icon">
+              <p>Java</p>
+            </div>
+            <div class="skill">
+              <img src="Photos/python-icon.png" alt="Python" class="skill-icon">
+              <p>Python</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h3>Projects</h3>
+      <div class="projects-grid">
+        <div class="project">
+          <img src="Photos/predictor.png" alt="E-Commerce Website" class="project-image">
+          <h4>Predictor Game</h4>
+          <p>A web application game built for my final year university project where users earn points for predicting the results of football matches and compete in leagues with other users.</p>
+          <p class="tech-stack">Tech: PHP, MySQL, HTML, CSS</p>
+          <a href="https://github.com/harrySavill/Predictor" target="_blank" class="project-button">View Code</a>
+        </div>
+        <div class="project">
+          <img src="Photos/course_hub.png" alt="Weather App" class="project-image">
+          <h4>University Course Hub</h4>
+          <p>A web app displaying information about courses available at a university, includes staff and admin functionality so staff can be added to courses and modules by admins. Staff can then login and see where they teach.</p>
+          <p class="tech-stack">Tech: PHP, MySQL, HTML, CSS</p>
+          <a href="https://github.com/harrySavill/CourseHub" target="_blank" class="project-button">View Code</a>
+        </div>
+        <div class="project">
+          <img src="Photos/converter.png" alt="To-Do List" class="project-image">
+          <h4>Unit and Currency Converter</h4>
+          <p>A simple web application where the user can convert between units (miles to kilometers) and currencies (GBP to USD). Uses an API to fetch up to date exchange rates.</p>
+          <p class="tech-stack">Tech: HTML, CSS, JavaScript</p>
+          <a href="https://github.com/harrySavill/Converter" target="_blank" class="project-button">View Code</a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
